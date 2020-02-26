@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {SideBar, ViewContainer, Navbar} from '../components'
 
 /**
  * COMPONENT
@@ -10,7 +11,11 @@ export const UserHome = props => {
 
   return (
     <div>
-      <h3>Welcome, {email}</h3>
+      <Navbar />
+      <div className="userHome">
+        <SideBar />
+        <ViewContainer>TEST</ViewContainer>
+      </div>
     </div>
   )
 }
